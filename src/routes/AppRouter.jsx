@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 
 import Navbar from "../components/Navbar";
 import CharacterScreen from "../pages/CharacterScreen";
@@ -23,7 +23,7 @@ const AppRouter = () => {
           <Route  path="/womans" element={<WomenScreen/>} />
           <Route  path="/search" element={<Search/>} />
 
-          <Route path="/" element={<ManScreen />} />
+          <Route element={<Navigate to='/mans'/>} />
         </Routes>
     </div>
   );

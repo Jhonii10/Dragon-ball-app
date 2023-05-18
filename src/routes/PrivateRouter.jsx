@@ -7,7 +7,7 @@ const PrivateRouter = ({children}) => {
   const {log} = useContext(AuthContext);
 
   return (
-    log ? children : <Navigate to='/login'/>
+    log ? children : <Navigate to='/login' replace/>
   );
 };
 

@@ -8,14 +8,11 @@ const Navbar = () => {
 
   const { dispatch } = useContext(AuthContext); 
 
-   const history = useNavigate()
-    console.log(history)
+   const navigate = useNavigate()
     
     const handleLogout = () => {
         dispatch({ type: authTypes.logout });
-        history('/login',{
-        replace: true
-        })
+        navigate('/login')
     }
 
 

@@ -1,17 +1,19 @@
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import AppRouter from "./AppRouter";
 
 import LoginScreen from "../pages/LoginScreen";
-import PublicRouter from "./PublicRouters";
+//import PublicRouter from "./PublicRouters";
+import PrivateRouter from "./PrivateRouter";
 
 const LoginRouter = () => {
 
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/login" element={<PublicRouter><LoginScreen/></PublicRouter>} />
-      <Route path="/*" element={<PublicRouter><AppRouter/></PublicRouter>} />
+      <Route exact path="/" element={<Navigate to="/login" replace />} />
+      <Route path="/login" element={<LoginScreen />} />
+      <Route path="/*" element={<PrivateRouter><AppRouter/></PrivateRouter>} /> 
       </Routes>
     </BrowserRouter>
   );

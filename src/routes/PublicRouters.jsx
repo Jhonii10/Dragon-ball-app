@@ -7,7 +7,7 @@ const PublicRouter = ({children}) => {
   const {log} = useContext(AuthContext);
 
   return (
-    !log ? <Navigate to='/'/>:children
+    log ? <Navigate to='/login' replace/>:children
   );
 };
 

@@ -5,11 +5,12 @@ import { authTypes } from "../types/AuthTypes";
 
 const LoginScreen = () => {
   const { dispatch } = useContext(AuthContext);
-  const navigate = useNavigate()
+  const  navigate = useNavigate()
 
   const handleLogin = () => {
     dispatch({ type: authTypes.login });
-    navigate("/");
+
+    navigate("/mans");
   };
 
   return (
