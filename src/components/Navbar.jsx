@@ -16,14 +16,12 @@ const Navbar = () => {
     }
 
     
-          window.addEventListener('scroll',fixnav)
-
-    
     function fixnav(){
       const nav = document.querySelector('.navbar')
       return window.scrollY > nav.offsetHeight ? nav.classList.add('active') : nav.classList.remove('active');
     }
 
+    window.addEventListener('scroll',fixnav)
 
     return (
         <div>
