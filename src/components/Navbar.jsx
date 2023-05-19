@@ -15,11 +15,19 @@ const Navbar = () => {
         navigate('/login')
     }
 
+    
+          window.addEventListener('scroll',fixnav)
+
+    
+    function fixnav(){
+      const nav = document.querySelector('.navbar')
+      return window.scrollY > nav.offsetHeight ? nav.classList.add('active') : nav.classList.remove('active');
+    }
 
 
     return (
         <div>
-        <nav className="navbar navbar-expand-lg bg-info">
+        <nav className="navbar navbar-expand-lg bg-info-10">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to='/login'>
       Dragon Ball

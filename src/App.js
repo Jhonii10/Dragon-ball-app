@@ -16,9 +16,11 @@ const App = () => {
   }, [log]);
 
   return (
+    <div className="App">
     <AuthContext.Provider value={{ log, dispatch }} >
       <LoginRouter  />
     </AuthContext.Provider>
+    </div>
   );
 };
 
