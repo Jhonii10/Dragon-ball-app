@@ -1,6 +1,6 @@
 # Dragon Ball App
 
-Esta es una emocionante aplicación de Dragon Ball Z desarrollada utilizando React con PWA y Bootstrap. Permite a los usuarios explorar información detallada sobre los personajes de Dragon Ball Z, incluyendo su nombre, raza, biografía y habilidades. La aplicación también ofrece la funcionalidad de búsqueda de personajes y la opción de marcar favoritos para un acceso rápido.
+Esta es una emocionante aplicación de Dragon Ball Z desarrollada utilizando React con PWA y Bootstrap. Permite a los usuarios explorar información detallada sobre los personajes de Dragon Ball Z, incluyendo su nombre, raza, biografía y habilidades. La aplicación también ofrece la funcionalidad de búsqueda de personajes para un acceso rápido.
 
 ## Tecnologías utilizadas
 
